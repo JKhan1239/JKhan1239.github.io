@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junaid Khan | Python Full-Stack Developer</title>
+  <meta name="description" content="Python Full-Stack Developer with 8+ years of experience building scalable web applications, REST APIs, automation solutions, data-processing systems, and cloud applications.">
+  <meta name="author" content="Junaid Khan">
+  <meta name="theme-color" content="#070b18">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Junaid Khan | Python Full-Stack Developer">
+  <meta property="og:description" content="Python Full-Stack Developer with 8+ years of experience building scalable web applications, REST APIs, automation solutions, data-processing systems, and cloud applications.">
+  <meta property="og:image" content="og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- After deploying, set og:url and an absolute og:image URL for best link previews. -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Apply saved theme before paint (no flash) -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Junaid Khan",
+    "jobTitle": "Python Full-Stack Developer",
+    "email": "mailto:khan.junaid.122399@gmail.com",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Central Missouri" },
+      { "@type": "CollegeOrUniversity", "name": "JNTUH" }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- Animated background -->
+  <div class="bg" aria-hidden="true">
+    <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+    <span class="grid"></span>
+  </div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Junaid Khan, home">
+        <span class="brand-mark">JK</span><span class="brand-name">Junaid Khan</span>
+      </a>
+      <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="#home" data-link>Home</a>
+        <a href="#about" data-link>About</a>
+        <a href="#skills" data-link>Skills</a>
+        <a href="#experience" data-link>Experience</a>
+        <a href="#projects" data-link>Projects</a>
+        <a href="#education" data-link>Education</a>
+        <a href="#contact" data-link>Contact</a>
+        <a class="btn btn-primary btn-sm nav-resume-mobile" data-resume download>Download Resume</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="btn btn-ghost btn-sm nav-resume" data-resume download><span data-icon="download"></span>Download Resume</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch to light theme"></button>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="pulse-dot"></span> Available for software engineering opportunities</p>
+          <h1 id="hero-title" class="reveal"><span class="hero-name">JUNAID KHAN</span><span class="hero-role">Python Full-Stack Developer</span></h1>
+          <p class="hero-tagline reveal">Building <span class="typed" id="typed" aria-live="off"></span><span class="caret" aria-hidden="true"></span><br>with Python.</p>
+          <p class="hero-text reveal">8+ years of experience delivering enterprise applications with <strong>Python</strong>, <strong>Django</strong>, <strong>Flask</strong> and <strong>FastAPI</strong>: REST APIs, <strong>React</strong> front ends, relational and NoSQL databases, and <strong>AWS</strong> cloud / Docker / CI/CD deployments.</p>
+          <div class="hero-cta reveal">
+            <a href="#projects" class="btn btn-primary"><span>View My Work</span><span data-icon="arrow-right"></span></a>
+            <a class="btn btn-outline" data-resume download><span data-icon="download"></span><span>Download Resume</span></a>
+          </div>
+          <ul class="socials reveal" aria-label="Social and contact links">
+            <li><a data-social="github" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span></a></li>
+            <li><a data-social="linkedin" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span data-icon="linkedin"></span></a></li>
+            <li><a data-social="email" aria-label="Email"><span data-icon="mail"></span></a></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit-wrap" id="orbit">
+            <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+            <div class="core"><span>&lt;/&gt;</span><small>Python</small></div>
+            <div id="tech-float"></div>
+          </div>
+          <div class="code-card">
+            <div class="code-dots"><i></i><i></i><i></i><span>transactions.py</span></div>
+<pre><code><span class="k">async def</span> <span class="f">process</span>(batch):
+    rows = <span class="f">validate</span>(batch)
+    data = <span class="f">transform</span>(rows)
+    <span class="k">return await</span> <span class="f">reconcile</span>(data)</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">01 / About</p>
+          <h2 id="about-title">About Me</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>I'm a Python developer with <strong>8+ years of experience</strong> designing, developing, testing, deploying, and maintaining enterprise web applications, backend services, RESTful APIs, and automation solutions across <strong>banking, healthcare, retail, and technology</strong> domains.</p>
+            <p>My expertise is in Python, Django, Flask and FastAPI, object-oriented programming, API development, data processing and application integration. I also build responsive front ends with React, Angular, TypeScript, jQuery and AJAX, with a strong understanding of how front end and back end fit together.</p>
+            <p>I enjoy implementing business logic, optimizing data-processing workflows, integrating cloud services, automating repetitive processes and troubleshooting production issues, delivering reliable solutions across the full software development lifecycle in Agile/Scrum environments.</p>
+            <ul class="fact-list">
+              <li><span data-icon="check"></span> Enterprise application development</li>
+              <li><span data-icon="check"></span> Testing &amp; production deployment</li>
+              <li><span data-icon="check"></span> Cloud development &amp; automation</li>
+            </ul>
+          </div>
+          <div class="about-stats reveal">
+            <div class="stat card"><strong data-count="8" data-suffix="+">8+</strong><span>Years of Python experience</span></div>
+            <div class="stat card"><strong data-count="4">4</strong><span>Domains: banking, healthcare, retail, tech</span></div>
+            <div class="stat card"><strong>REST</strong><span>API design &amp; integration</span></div>
+            <div class="stat card"><strong>Full&#8209;Stack</strong><span>Python + React / Angular</span></div>
+          </div>
+        </div>
+        <h3 class="sub-title reveal">What I Do</h3>
+        <div class="do-grid" id="what-i-do"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">02 / Skills</p>
+          <h2 id="skills-title">Technical Skills</h2>
+          <p class="section-sub">Filter by category to explore the tools I work with.</p>
+        </header>
+        <div class="chips reveal" id="skill-filters" role="group" aria-label="Filter skills by category"></div>
+        <div class="skills-grid" id="skills-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section" aria-labelledby="exp-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">03 / Experience</p>
+          <h2 id="exp-title">Professional Experience</h2>
+          <p class="section-sub">Select a role to see the project, stack and responsibilities.</p>
+        </header>
+        <ol class="timeline" id="timeline"></ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">04 / Projects</p>
+          <h2 id="projects-title">Featured Projects</h2>
+          <p class="section-sub">Portfolio sample projects based on the domains and technologies I work with. They are illustrative and not necessarily built for any listed employer.</p>
+        </header>
+        <div class="toolbar reveal">
+          <div class="chips" id="project-filters" role="group" aria-label="Filter projects by category"></div>
+          <label class="search">
+            <span data-icon="search"></span>
+            <span class="sr-only">Search projects</span>
+            <input type="search" id="project-search" placeholder="Search projects or tech…" autocomplete="off">
+          </label>
+        </div>
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+        <p class="empty" id="projects-empty" hidden>No projects match your search.</p>
+
+        <!-- GitHub integration -->
+        <div id="github-section" class="github" hidden>
+          <h3 class="sub-title">Latest on GitHub</h3>
+          <div class="repo-grid" id="repo-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="section section-tight" aria-labelledby="resume-title">
+      <div class="container">
+        <div class="resume-card reveal">
+          <div>
+            <p class="kicker">Resume</p>
+            <h2 id="resume-title">Download my resume</h2>
+            <ul class="resume-points">
+              <li><span data-icon="check"></span> Python Developer</li>
+              <li><span data-icon="check"></span> 8+ Years Experience</li>
+              <li><span data-icon="check"></span> Backend &amp; Full-Stack Development</li>
+              <li><span data-icon="check"></span> Cloud &amp; API Development</li>
+            </ul>
+          </div>
+          <a class="btn btn-primary btn-lg" data-resume download><span data-icon="download"></span><span>Download Resume</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">05 / Education</p>
+          <h2 id="edu-title">Education</h2>
+        </header>
+        <ol class="edu-timeline" id="edu-timeline"></ol>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="kicker">06 / Contact</p>
+          <h2 id="contact-title">Let's Build Something Great</h2>
+          <p class="section-sub">Interested in working together or discussing a software engineering opportunity? Feel free to get in touch.</p>
+        </header>
+        <div class="contact-grid">
+          <ul class="contact-list reveal">
+            <li><a class="card contact-item" data-social="email"><span class="ci-icon" data-icon="mail"></span><span><small>Email</small><b id="c-email"></b></span></a></li>
+            <li><a class="card contact-item" data-social="phone"><span class="ci-icon" data-icon="phone"></span><span><small>Phone</small><b id="c-phone"></b></span></a></li>
+            <li><a class="card contact-item" data-social="linkedin" target="_blank" rel="noopener noreferrer"><span class="ci-icon" data-icon="linkedin"></span><span><small>LinkedIn</small><b>View profile</b></span></a></li>
+            <li><a class="card contact-item" data-social="github" target="_blank" rel="noopener noreferrer"><span class="ci-icon" data-icon="github"></span><span><small>GitHub</small><b>View profile</b></span></a></li>
+          </ul>
+
+          <form id="contact-form" class="card form reveal" novalidate>
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name">
+              <p class="err" id="e-name" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required aria-describedby="e-email">
+              <p class="err" id="e-email" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-subject">Subject</label>
+              <input id="f-subject" name="subject" type="text" required aria-describedby="e-subject">
+              <p class="err" id="e-subject" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-message">Message</label>
+              <textarea id="f-message" name="message" rows="5" required aria-describedby="e-message"></textarea>
+              <p class="err" id="e-message" role="alert"></p>
+            </div>
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+            <button class="btn btn-primary" type="submit" id="send-btn"><span data-icon="send"></span><span id="send-label">Send Message</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="f-name">Junaid Khan</p>
+        <p class="f-title">Python Full-Stack Developer</p>
+      </div>
+      <nav aria-label="Footer" class="f-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a data-social="github" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a data-social="linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+    </div>
+    <p class="copy">&copy; 2026 Junaid Khan. All rights reserved.</p>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="Back to top" hidden></button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal" id="modal" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="icon-btn modal-close" type="button" data-close aria-label="Close project details"></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <noscript><p style="padding:2rem;text-align:center">Please enable JavaScript to view this portfolio, or email khan.junaid.122399@gmail.com.</p></noscript>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
